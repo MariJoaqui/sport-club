@@ -7,6 +7,10 @@
 	<link rel="shorcut icon" href="./images/logo-4.png">
   <link rel="stylesheet" href="./styles/style.css">
 
+  <!-- Keen-slider -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/keen-slider@6.8.5/keen-slider.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/keen-slider@6.8.5/keen-slider.min.js"></script>
+
   <!-- FontAwesome -->
   <script src="https://kit.fontawesome.com/7b9d13adc5.js" crossorigin="anonymous"></script>
 </head>
@@ -14,7 +18,7 @@
 
 	<!-- header -->
   <header class="header">
-    <div class="menu">
+    <div class="menu padding-lg">
       <a href="index.html" class="display-flex">
         <img src="images/logo-4.png" class="logo">
         <h4 class="titulo">SPORT&CLUB</h4>
@@ -29,7 +33,7 @@
       </nav>
       <div for="menu">
         <i class="fa-solid fa-cart-shopping icono"></i>
-        <button>Iniciar sesión</button>
+        <button class="botones">Iniciar sesión</button>
       </div>
       <div class="sub-menu">
         <p>Tienes 2 productos en el carrito.</p>
@@ -42,15 +46,12 @@
   </header>
 	<!-- /header -->
 
-  
-
-
-
-  <div class="header-content container">
-    <div class="header-txt">
-      <span>Bienvenido a nuestra tienda</span>
-      <h1>Ofertas especiales</h1>
-      <p>
+  <!-- inicio -->
+  <div class="inicio padding-lg">
+    <div class="texto">
+      <span class="texto-normal">Bienvenido a nuestra tienda</span>
+      <h1>Sobre Nosotros</h1>
+      <p class="texto-normal">
         Lorem ipsum dolor sit amet consecte
         tur adipisicing elit. Fugiat rerum o
         bcaecati excepturi 
@@ -58,15 +59,20 @@
         um recusandae, tempore modi molestias, 
         totam autem tempora illo nihil repudiandae?
       </p>
-      <div class="butons">
-        <a href="#" class="btn-1">Informacion</a>
-        <a href="#" class="btn-1">Leer mas</a>
+      <div class="display-flex">
+        <a href="#" class="botones">Información</a>
+        <a href="#" class="botones">Leer más</a>
       </div>
     </div>
-    <div class="header-img">
-      <img src="images/bag.webp" alt="">
+    <div class="slider">
+      <div id="slider" class="keen-slider">
+        <img src="./images/img-1.png" class="keen-slider__slide number-slide1"/>
+        <img src="./images/img-2.png" class="keen-slider__slide number-slide1"/>
+        <img src="./images/img-3.png" class="keen-slider__slide number-slide1"/>
+      </div>
     </div>
   </div>
+  <!-- /inicio -->
 
 	<!-- sección 1-->
   <section class="oferts container">
@@ -306,6 +312,8 @@
   </footer>
 	<!-- /footer -->
     
+  <!-- scripts -->
   <script src="./script/script.js"></script>
+  <script src="./script/slider.js"></script>
 </body>
 </html>
