@@ -71,6 +71,18 @@ img {
   background: #0a2f6f;
   transition: 1s;
 }
+.header .sub-menu {
+  background: #d8d8d8;
+  border-radius: 0 0 0.8rem 0.8rem;
+  display: none;
+  font-size: 0.7rem;
+  padding: 1.3rem 1rem;
+  position: absolute;
+  top: 4.15rem;
+}
+.header p {
+  color: #000000;
+}
 .header .menu-lateral {
   display: none;
 }
