@@ -12,6 +12,9 @@
 body {
   font-family: 'poppins', sans-serif;
 }
+body::-webkit-scrollbar { width: 0.5rem; }
+body::-webkit-scrollbar-track { background: #ffffff; }
+body::-webkit-scrollbar-thumb { background: #9BCE21; }
 img {
   max-width: 50%;
 }
@@ -21,7 +24,6 @@ img {
   border-radius: 6rem;
   box-shadow: 1px 1px 2px #818181;
   color: #FFFFFF;
-  cursor: pointer;
   font-size: 1rem;
   padding: 0.6rem 1.5rem;
   transition: 1s;
@@ -34,6 +36,9 @@ img {
   margin: 0 auto;
   max-width: 1200px;
 }
+.cursor {
+  cursor: pointer;
+}
 .display-flex {
   display: flex;
 }
@@ -45,6 +50,10 @@ img {
   color: #000000;
   font-size: 1rem;
   font-weight: 600;
+}
+.texto-verde {
+  color: #9BCE21;
+  text-shadow: 1px 1px 2px #000000;
 }
 
 /* Header */
@@ -73,9 +82,11 @@ img {
   display: block;
   font-size: 18px;
   padding: 20px;
+  transition: 1s;
 }
 .header .navbar ul li a:hover {
-  color: #0000FF;
+  color: #9BCE21;
+  transition: 1s;
 }
 .header .icono {
   font-size: 1.3rem;
@@ -103,11 +114,11 @@ img {
   display: flex;
   background: #F6F6F6;
   justify-content: space-between;
-  padding-top: 3rem;
+  padding: 3rem 0 0 8%;
 }
 .inicio .texto {
-  flex-basis: 50px;
   margin-right: 10%;
+  width: 85%;
 }
 .inicio span {
   color: #000000;
@@ -115,11 +126,9 @@ img {
   margin-bottom: 25px;
 }
 .inicio h1 {
-  color: #9BCE21;
   font-size: 70px;
   line-height: 1;
   margin-bottom: 35px;
-  text-shadow: 1px 1px 2px black;
 }
 .inicio p {
   margin-bottom: 35px;
@@ -127,26 +136,18 @@ img {
 .inicio .botones {
   margin: 0 1.5rem 4rem 0;
 }
-[class^="number-slide"],
-[class*=" number-slide"] {
+.slider-container {
+  max-height: 550px; 
+  overflow: hidden;
+}
+.keen-slider__slide {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 600px;
-  max-height: 70vh;
+  height: 550px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
+/* Sección 1 */
 .oferts {
     padding: 100px 0;
     display: flex;
@@ -258,7 +259,6 @@ h2 {
     border-radius: 25px;
     color: #FFFFFF;
     font-size: 16px;
-    cursor: pointer;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
