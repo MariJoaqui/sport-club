@@ -13,8 +13,8 @@ body {
   font-family: 'poppins', sans-serif;
 }
 body::-webkit-scrollbar { width: 0.5rem; }
-body::-webkit-scrollbar-track { background: #ffffff; }
-body::-webkit-scrollbar-thumb { background: #9BCE21; }
+body::-webkit-scrollbar-track { background: #FFFFFF; }
+body::-webkit-scrollbar-thumb { background: #000000; }
 img {
   max-width: 50%;
 }
@@ -29,7 +29,7 @@ img {
   transition: 1s;
 }
 .botones:hover {
-  background: #0a2f6f;
+  background: #0A2F6F;
   transition: 1s;
 }
 .container {
@@ -47,19 +47,16 @@ img {
   padding-right: 10%;
 }
 .texto-normal {
-  color: #000000;
+  color: #4a4a4a;
   font-size: 1rem;
-  font-weight: 600;
-}
-.texto-verde {
-  color: #9BCE21;
-  text-shadow: 1px 1px 2px #000000;
+  font-weight: 400;
+  margin-bottom: 1rem;
 }
 
 /* Header */
 .header .menu {
   align-items: center;
-  background: #F6F6F6;
+  background: #FFFFFF;
   display: flex;
   justify-content: space-between;
   padding: 0 5rem;
@@ -78,14 +75,14 @@ img {
   position: relative;
 }
 .header .navbar ul li a {
-  color: #000000;
+  color: #767676;
   display: block;
   font-size: 18px;
   padding: 20px;
   transition: 1s;
 }
 .header .navbar ul li a:hover {
-  color: #9BCE21;
+  color: #000000;
   transition: 1s;
 }
 .header .icono {
@@ -112,40 +109,52 @@ img {
 .inicio {
   align-items: center;
   display: flex;
-  background: #F6F6F6;
+  background: url('../images/fondo-1.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
   justify-content: space-between;
-  padding: 3rem 0 0 8%;
+  padding: 0 0 0 8%;
 }
-.inicio .texto {
+.inicio .informacion {
   margin-right: 10%;
-  width: 85%;
+  width: 100%;
 }
-.inicio span {
-  color: #000000;
-  display: block;
-  margin-bottom: 25px;
+.inicio .texto-bienvenida {
+  color: #9BCE21;
+  font-size: 1.2rem;
+  font-weight: 700;
 }
 .inicio h1 {
-  font-size: 70px;
-  line-height: 1;
-  margin-bottom: 35px;
+  color: #000000;
+  font-size: 3.2rem;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px #a4a4a4;
 }
-.inicio p {
-  margin-bottom: 35px;
+.inicio .espacio {
+  margin-bottom: 2.5rem;
 }
 .inicio .botones {
-  margin: 0 1.5rem 4rem 0;
+  margin: 3rem 1.5rem 0 0;
 }
-.slider-container {
-  max-height: 550px; 
+.inicio .slider {
+  align-items: center;
+  text-align: center;
   overflow: hidden;
 }
-.keen-slider__slide {
+.inicio .image {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 550px;
+  padding: 3rem 0;
 }
+.inicio .image img {
+  height: 26rem;
+  min-width: 25rem !important;
+}
+
+
+
+
+
+
 
 /* Sección 1 */
 .oferts {
