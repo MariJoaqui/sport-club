@@ -43,11 +43,10 @@ img {
   display: flex;
 }
 .padding-lg {
-  padding-left: 10%;
-  padding-right: 10%;
+  padding: 5rem 8%;
 }
 .texto-normal {
-  color: #4a4a4a;
+  color: #4A4A4A;
   font-size: 1rem;
   font-weight: 400;
   margin-bottom: 1rem;
@@ -90,7 +89,7 @@ img {
   margin-right: 2rem;
 }
 .header .sub-menu {
-  background: #d8d8d8;
+  background: #D8D8D8;
   border-radius: 0 0 0.8rem 0.8rem;
   display: none;
   font-size: 0.7rem;
@@ -128,10 +127,10 @@ img {
   color: #000000;
   font-size: 3.2rem;
   margin-bottom: 1rem;
-  text-shadow: 2px 2px 4px #a4a4a4;
+  text-shadow: 2px 2px 4px #A4A4A4;
 }
 .inicio .espacio {
-  margin-bottom: 2.5rem;
+  margin-bottom: 3.5rem;
 }
 .inicio .botones {
   margin: 3rem 1.5rem 0 0;
@@ -150,81 +149,63 @@ img {
   min-width: 25rem !important;
 }
 
-
-
-
-
-
-
 /* Sección 1 */
-.oferts {
-    padding: 100px 0;
-    display: flex;
-    justify-content: space-between;
+.seccion-1 {
+  background: #EAEAEA;
+}
+.seccion-1 h5 {
+  color: #FA9824;
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  text-shadow: 1px 1px 1px #000000;
+}
+.seccion-1 .display-flex {
+  justify-content: space-between;
+}
+.seccion-1 .cartas {
+  background: #FFFFFF;
+  border-top: #9BCE21 2px solid;
+  border-radius: 1rem;
+  box-shadow: 5px 5px 10px #BCBCBC;
+  padding: 1.5rem;
+  text-align: center;
+  width: 30%;
+}
+.seccion-1 .cartas img {
+  margin-top: 2rem;
+}
+.seccion-1 .texto-final {
+  color: #000000;
+  font-size: 0.8rem;
+  margin: 3rem 10% 0 10%;
+  text-align: center;
 }
 
-.ofert-1 {
-    flex-basis: calc(33.3% - 20px);
-    padding: 10px 15px;
-    justify-content: space-between;
-    align-items: center;
+/* Sección 2 */
+.seccion-2 {
+  background: #FFFFFF;
+  text-align: center;
 }
-
-.b1 {
-    background-color: #91ddd8;
+.seccion-2 h2 {
+  color: #FA9824;
+  font-size: 2.2rem;
+  text-shadow: 1px 1px 1px #000000;
 }
-.b2 { 
-    background-color: #FA9824;
-}
-
-.b3 { 
-    background-color: #9BCE21;
-}
-
-.ofert-txt{
-    flex-basis: 50%;
-}
-
-.ofert-txt h3 {
-    color: #FFFFFF;
-    font-size: 20px;
-}
-
-.ofert-txt a {
-    color: #FFFFFF;
-}
-
-.ofert-img {
-    flex-basis: 50%;
-    
-}
-
-.products {
-    padding: 0 0 50px 0;
-    text-align: center;
-}
- 
-h2 {
-    font-size: 40px;
-    color: #111419;
-}
-
 .box-container { 
-    margin-top: 55px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 55px;
 }
-
 .box {
-    border-top: 2px solid #9BCE21;
-    padding: 20px;
-    border-radius: 15px;
-    box-shadow: 0  5px 10px rgba(0, 0, 0, 0.2);
-    background-color: #F6FAFB;
-    display: none;
+  background: #FFFFFF;
+  border-radius: 15px;
+  border-top: 2px solid #9BCE21;
+  box-shadow: 0 5px 10px #00000033;
+  display: none;
+  padding: 1.5rem 1.5rem 1rem 2rem;
 }
-
 .box:nth-child(1),
 .box:nth-child(2),
 .box:nth-child(3),
@@ -233,53 +214,69 @@ h2 {
 .box:nth-child(6),
 .box:nth-child(7),
 .box:nth-child(8) {
-    display: inline-block;
+  display: inline-block;
 }
-
 .box img {
-    height: 200px;
+  height: 140px;
 }
 
 .products-txt h3 {
-    font-size: 20px;
-    color: #111419;
-    margin-bottom: 10px;
+  font-size: 20px;
+  color: #111419;
+  margin-bottom: 10px;
 
 }
 
 .product-txt p {
-    margin-bottom: 25px;
-    color: #515557;
+  margin-bottom: 25px;
+  color: #515557;
 
 }
 
 .precio {
-    font-size: 17px;
-    font-weight: 700;
-    color: #FF9100 !important;
+  font-size: 17px;
+  font-weight: 700;
+  color: #FF9100 !important;
 
 }
 
 .btn-2, .btn {
-    background-color: #9BCE21;
-    margin-top: 50px;
-    display: inline-block;
-    padding: 11px 35px;
-    border-radius: 25px;
-    color: #FFFFFF;
-    font-size: 16px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  background-color: #9BCE21;
+  margin-top: 50px;
+  display: inline-block;
+  padding: 11px 35px;
+  border-radius: 25px;
+  color: #FFFFFF;
+  font-size: 16px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
 .btn-2:hover, .btn-3:hover,.btn-1:hover { 
-    background-color: #13462E;
+  background-color: #13462E;
 }
 
 .btn-3{
-    margin: 0;
-    padding: 8px 25px;
-    border-radius: 5px;
+  margin: 0;
+  padding: 8px 25px;
+  border-radius: 5px;
 }
+
+
+
+/*
+.b1 {
+    background-color: #91ddd8;
+}
+.b2 { 
+    background-color: #FA9824;
+}
+.b3 { 
+    background-color: #9BCE21;
+}*/
+
+
+
+
 
 .testimonial {
     padding: 100px 0;
