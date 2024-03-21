@@ -40,6 +40,9 @@ body::-webkit-scrollbar-thumb { background: #9BCE21; }
 .display-flex {
   display: flex;
 }
+.display-none {
+  display: none !important;
+}
 .padding-lg {
   padding: 5rem 8%;
 }
@@ -97,9 +100,6 @@ body::-webkit-scrollbar-thumb { background: #9BCE21; }
 }
 .header p {
   color: #000000;
-}
-.header .menu-lateral {
-  display: none;
 }
 
 /* Inicio */
@@ -337,50 +337,26 @@ body::-webkit-scrollbar-thumb { background: #9BCE21; }
   text-align: center;
 }
 
+@media (max-width: 1070px) {
+
+  /* Header */
+  .header .menu {
+    padding: 1rem;
+  }
+  .header .logo {
+    height: 2rem;
+    width: 2rem;
+  }
+  .header nav, .header .fa-cart-shopping, .header .boton-inicio {
+    display: none !important; 
+  }
+  .header .menu-botones .icono-menu {
+    display: inline-block !important;
+  }
+
+}
 @media (max-width:991px) {
 
-    .menu {
-        padding:20px;
-    }
-    .menu label {
-        display: initial;
-    }
-
-    .menu.navbar {
-        position: absolute;
-        top: 100%;
-        left: 0;
-        right: 0;
-        background-color: #FF9000;
-        display: none;
-
-    }
-    .menu .navbar ul li {
-        width: 100%;
-    }
-    #menu:checked ~ .navbar{
-        display: initial;
-    } 
-
-    .logo {
-        display: none;
-    }
-    .menu .navbar ul li a:hover { 
-        color: #FFFFFF;
-    }
-    
-    .submenu:hover #carrito{
-        width: 100%;
-    }
-    .header{
-        padding: 50px 0 0 0;
-    }
-    
-    .header-content{
-        padding: 30px;
-        flex-direction: column;
-        text-align: center;
-    }
 
     .texto{
         margin-right: 0;
