@@ -411,12 +411,24 @@ body::-webkit-scrollbar-thumb { background: #9BCE21; }
   }
 
 }
-
 @media (max-width: 600px) {
 
   /* Global */
   h2 {
     font-size: 1.8rem !important;
+  }
+  .botones {
+    font-size: 0.8rem;
+    font-weight: 700;
+    padding: 0.4rem 1rem;
+  }
+  .padding-lg {
+    padding: 2.5rem 8%;
+  }
+
+  /* Inicio */
+  .inicio .informacion div {
+    text-align: center;
   }
 
   /* Testimonios */
@@ -430,6 +442,9 @@ body::-webkit-scrollbar-thumb { background: #9BCE21; }
   }
 
   /* Footer */
+  .footer {
+    padding: 0;
+  }
   .footer .footer-content {
     flex-direction: column;
     text-align: center;
