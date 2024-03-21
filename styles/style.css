@@ -102,6 +102,26 @@ body::-webkit-scrollbar-thumb { background: #9BCE21; }
   color: #000000;
 }
 
+/* Menu lateral */
+.header .menu-lateral {
+  background: #c2c2c2;
+  height: 100%;
+  padding: 1rem 2rem;
+  position: fixed;
+  right: 0;
+  text-align: end;
+  top: 4.35rem;
+  width: 14rem;
+}
+.header .menu-lateral li {
+  color: #FFFFFF;
+  padding: 0.6rem 0;
+  text-shadow: 2px 2px 4px #A4A4A4;
+}
+.header .menu-lateral li:hover {
+  color: #0000FF;
+}
+
 /* Inicio */
 .inicio {
   align-items: center;
@@ -340,6 +360,10 @@ body::-webkit-scrollbar-thumb { background: #9BCE21; }
 @media (max-width: 1070px) {
 
   /* Header */
+  .header {
+    position: fixed;
+    width: 100%;
+  }
   .header .menu {
     padding: 1rem;
   }

@@ -1,3 +1,18 @@
+// Menu lateral
+function menuLateral() {
+  var menu = document.getElementById("menu-lateral");
+  var icono = document.getElementById("icono");
+    
+  if (menu.classList.contains("display-none")) {
+    menu.classList.remove("display-none");
+    icono.classList.add("display-none");
+  }
+  else {
+    menu.classList.add("display-none");
+  }
+}
+
+// Otros
 let loadMoreBtn = document.querySelector('#load-more');
 let currentItem = 8;
 

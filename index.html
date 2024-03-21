@@ -33,15 +33,25 @@
       </nav>
       <div class="menu-botones">
         <i class="fa-solid fa-cart-shopping icono cursor"></i>
-        <i class="fa-solid fa-bars icono cursor display-none icono-menu"></i>
+        <i id="icono"
+           class="fa-solid fa-bars icono cursor display-none icono-menu"
+           onclick="menuLateral()">
+        </i>
         <button class="botones cursor boton-inicio">Iniciar sesión</button>
       </div>
       <div class="sub-menu">
         <p>Tienes 2 productos en el carrito.</p>
         <a href="#">Ir al carrito</a>
       </div>
-      <div class="menu-lateral display-none">
-        Aqui
+      <div id="menu-lateral" class="menu-lateral display-none">
+        <ul>
+          <li class="cursor"><a>Inicio</a></li>
+          <li class="cursor"><a>Servicios</a></li>
+          <li class="cursor"><a>Productos</a></li>
+          <li class="cursor"><a>Contactos</a></li>
+          <li class="cursor"><a>Mi carrito</a></li>
+          <li class="cursor"><a>Iniciar sesión</a></li>
+        </ul>
       </div>
     </div>
   </header>
