@@ -296,18 +296,18 @@ body::-webkit-scrollbar-thumb { background: #9BCE21; }
 
 /* Footer */
 .footer {
-  background-color: #9ace2196;
+  background-color: #797979;
   padding: 60px 0 0 0;
 }
 .footer .footer-content {
   justify-content: space-around;
 }
-.link .center {
+.footer .link .center {
   text-align: center;
 }
-.link .center h3 {
+.footer .link .center h3 {
   color: #0000FF !important;
-  text-shadow: none !important;
+  text-shadow: 1px 1px 1px #ffffff;
 }
 .footer .link h3 {
   color: #ffffff;
@@ -323,7 +323,6 @@ body::-webkit-scrollbar-thumb { background: #9BCE21; }
 }
 .footer .link img {
   border-radius: 50%;
-  box-shadow: 5px 5px 10px #0000007c;
   height: 130px;
   width: 130px;
 }
